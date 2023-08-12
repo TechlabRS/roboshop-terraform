@@ -6,7 +6,7 @@ default_vpc_cidr = "172.31.0.0/16"
 default_vpc_rtid = "rtb-02d7625eb1e85e06a"
 kms_arn          = "arn:aws:kms:us-east-1:199475810385:key/7a2333da-836e-400c-9b14-c4408cd5c35f"
 domain_name      = "uknowme.tech"
-domain_id        = "Z083873827NTYP2T5V95Z"
+domain_id        = module.host-ext.output.myop1.zone_id
 
 
 vpc = {
