@@ -1,9 +1,9 @@
-#module "host-ext" {
- # source = "git::https://github.com/TechlabRS/rs-test-tf.git"
-  # output "myop1"{
-  #value = resource.aws_route53_zone.myzone.zone_id
-  #}
-#}
+module "host-ext" {
+ source = "git::https://github.com/TechlabRS/rs-test-tf.git"
+ output "myop1"{
+  value = resource.aws_route53_zone.myzone.zone_id
+  }
+}
 module "vpc" {
   source = "git::https://github.com/TechlabRS/tf-module-vpc.git"
 
